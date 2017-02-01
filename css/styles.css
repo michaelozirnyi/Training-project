@@ -3,7 +3,9 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+
   z-index: -1;
   overflow: hidden;
 }
@@ -14,3 +16,4 @@
 .header-wrap {
   height: 2000px;
 }
+
