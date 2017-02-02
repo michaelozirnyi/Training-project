@@ -230,6 +230,176 @@
 // // использование:
 // alert( sum(25, 45) ); // 3
 
+// var hello = "Привет, мир!";
+//
+// console.log( hello.toUpperCase() ); // "ПРИВЕТ, МИР!"
+
+
+// var a = prompt('Введите число', ''),
+//     b = prompt('Введите второе число', '');
+// alert(+a + +b);
+
+// var str = "Я - современный браузер!";
+// console.log( str[0] ); // "Я"
+
+// var str = 'string';
+//     str = str.charAt(0).toUpperCase() + str.slice(1);
+//
+// console.log(str);
+
+// var str = '$120';
+//     str = +str.slice(1);
+// console.log(str);
+
+// var obj = {};
+// obj.test = undefined;
+//
+// alert( "test" in obj ); // true
+// alert( "blabla" in obj ); // false
+
+
+// var person = {};
+// person.age = 25;
+// var key = 'age';
+//
+// alert( person[key] ); // выведет person['age']
+
+// var user = {
+//     name: "Таня",
+//     age: 25,
+//     size: {
+//         top: 90,
+//         middle: 60,
+//         bottom: 90
+//     }
+// };
+//
+// console.log(user.name); // "Таня"
+// console.log(user.size.top); // 90
+// console.log(user.size);
+
+
+// var person ={};
+// console.log(person);
+//     person.name = 'Вася';
+// console.log(person);
+//     person.surname = 'Петров';
+// console.log(person);
+//     person.name = 'Сергей';
+// console.log(person);
+//     delete person.name;
+// console.log(person);
+
+
+// var menu = {
+//     width: 300,
+//     height: 200,
+//     title: "Menu"
+// };
+//
+// for (var key in menu) {
+//     // этот код будет вызван для каждого свойства объекта
+//     // ..и выведет имя свойства и его значение
+//
+//     console.log( "Ключ: " + key + " значение: " + menu[key] );
+// }
+
+
+// function isEmpty(obj) {
+//     for (var key in obj) {
+//         return false;
+//     }
+//     return true;
+// }
+//
+// var schedule = {};
+//
+// console.log( isEmpty(schedule) ); // true
+//
+// schedule["8:30"] = "подъём";
+//
+// console.log( isEmpty(schedule) ); // false
+
+// "use strict";
+//
+// var salaries = {
+//     "Вася": 100,
+//     "Петя": 300,
+//     "Даша": 250
+// };
+// var sum = 0;
+// for (var name in salaries) {
+//     sum += salaries[name];
+// }
+//
+// console.log( sum );
+
+// var a = [];
+// a[0] = 0;
+// a[5] = 5;
+//
+// alert( a );
+
+// var goods = [];
+//
+// lastElement = goods[goods.length - 1];
+// goods[goods.length] = 'something';
+
+
+// var styles = ['Джаз', 'Блюз'];
+// console.log(styles);
+//
+//     styles[styles.length] = 'Рок-н-Ролл';
+// console.log(styles);
+//
+//     styles[styles.length - 2] = 'Классика';
+// console.log(styles);
+//
+//     var firstElem = styles.shift();
+// console.log(styles);
+//
+//     styles.unshift('Рэп', 'Регги');
+// console.log(styles);
+
+
+// var arr = ["Яблоко", "Апельсин", "Груша", "Лимон"];
+//
+// var rand = Math.floor(Math.random() * arr.length);
+//
+// alert( arr[rand] );
+
+// var numbers = [];
+//
+// while (true) {
+//
+//     var value = prompt("Введите число", 0);
+//
+//     if (value === "" || value === null || isNaN(value)) break;
+//
+//     numbers.push(+value);
+// }
+// var sum = 0;
+// for (var i = 0; i < numbers.length; i++) {
+//     sum += numbers[i];
+// }
+//
+// console.log( sum );
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
