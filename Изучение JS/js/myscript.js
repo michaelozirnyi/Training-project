@@ -386,6 +386,21 @@
 // console.log( sum );
 
 
+// var arr = ["Я", "иду", "домой"];
+//
+// delete arr[1]; // значение с индексом 1 удалено
+//
+// // теперь arr = ["Я", undefined, "домой"];
+// console.log( arr[1]); // undefined
+
+
+// var arr = ["Почему", "надо", "учить", "JavaScript"];
+// var fullCopy = arr.slice();
+//
+// delete arr[1];
+// delete arr[2];
+// console.log(fullCopy);
+// console.log(arr);
 
 
 
