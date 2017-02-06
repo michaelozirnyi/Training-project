@@ -410,6 +410,20 @@
 
 
 
+/*------------======= animated css =======--------------*/
+
+var aimationName = 'animated shake';
+
+$('#firstLink').on('click', function () {
+
+   $('#first').addClass(aimationName)
+              .one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function () {
+                  //Do something on finished animations
+                  $(this).removeClass(aimationName);
+              });
+});
+
+
 
 
 
