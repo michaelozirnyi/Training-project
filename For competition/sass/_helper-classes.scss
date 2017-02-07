@@ -1,0 +1,44 @@
+.text {
+  &-blue {
+    color: $blue;
+  }
+
+  &-center {
+    text-align: center;
+  }
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+section {
+  padding: 100px 0 100px 95px;
+}
+
+.flexes {
+  display: flex;
+
+}
+
+/*
+
+.just-c-center {
+  justify-content: center;
+}
+
+.just-c-sp-b {
+  justify-content: space-between;
+}
+
+.just-c-sp-ar {
+  justify-content: space-around;
+}
+
+.hidden, .hidden-text {
+  display: none;
+}*/
