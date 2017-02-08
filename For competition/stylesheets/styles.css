@@ -19,7 +19,7 @@ a, a:hover {
 
 /* line 19, ../sass/_helper-classes.scss */
 section {
-  padding: 100px 0 100px 95px;
+  padding: 0 0 100px 95px;
 }
 
 /* line 23, ../sass/_helper-classes.scss */
@@ -65,13 +65,14 @@ h1 {
 
 /* line 21, ../sass/styles.scss */
 h2 {
+  padding-top: 100px;
   margin: 0 0 100px 0;
-  font: 600 30px/22px "Exo 2", sans-serif;
+  font: 600 30px/21px "Exo 2", sans-serif;
   color: #333;
   padding-bottom: 30px;
   position: relative;
 }
-/* line 28, ../sass/styles.scss */
+/* line 29, ../sass/styles.scss */
 h2:after {
   content: '';
   position: absolute;
@@ -82,11 +83,10 @@ h2:after {
   background-color: #3971ff;
 }
 
-/* line 39, ../sass/styles.scss */
+/* line 40, ../sass/styles.scss */
 h3 {
   margin: 0 0 24px 0;
-  line-height: 17px;
-  font: 400 24px/30px "Roboto", sans-serif;
+  font: 400 24px/17px "Roboto", sans-serif;
 }
 
 /* line 45, ../sass/styles.scss */
@@ -94,7 +94,7 @@ p {
   font-size: 16px;
 }
 
-/*----------HEADER section-----------*/
+/*-----------HEADER section----------*/
 /* line 51, ../sass/styles.scss */
 .header {
   background: url(../images/image-background.png);
@@ -160,23 +160,23 @@ p {
   position: absolute;
 }
 
-/*--------NAVIGATION section---------*/
+/*---------NAVIGATION section--------*/
 /* line 117, ../sass/styles.scss */
 .navigation {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 57px 0 0 30px;
+  padding: 62px 0 0 30px;
   font-family: "Exo 2", sans-serif;
 }
 /* line 124, ../sass/styles.scss */
 .navigation h3 {
-  margin-bottom: 15px;
+  margin-bottom: 23px;
   font-family: "Exo 2", sans-serif;
 }
 /* line 128, ../sass/styles.scss */
 .navigation p {
-  margin-bottom: 25px;
+  margin-bottom: 27px;
   font: 300 16px/17px "Roboto", sans-serif;
 }
 /* line 133, ../sass/styles.scss */
@@ -226,7 +226,7 @@ p {
   background-color: #3971ff;
 }
 
-/*--------PROFESSIONAL SKILLS section---------*/
+/*------PROFESSIONAL SKILLS section---*/
 /* line 183, ../sass/styles.scss */
 .skills {
   background-color: #fff;
@@ -276,6 +276,94 @@ p {
 .skills p {
   line-height: 12px;
   margin: 0;
+}
+
+/*---------EDUCATION section---------*/
+/* line 234, ../sass/styles.scss */
+.education, .experience {
+  padding-bottom: 0;
+}
+/* line 237, ../sass/styles.scss */
+.education ul, .experience ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 244, ../sass/styles.scss */
+.education ul li, .experience ul li {
+  width: 435px;
+  margin: 0 41px 100px 0;
+  position: relative;
+}
+/* line 251, ../sass/styles.scss */
+.education ul li:hover .number-li, .experience ul li:hover .number-li {
+  color: #3971ff;
+}
+/* line 255, ../sass/styles.scss */
+.education ul li:hover h3, .experience ul li:hover h3 {
+  color: #3971ff;
+}
+/* line 261, ../sass/styles.scss */
+.education ul .number-li, .experience ul .number-li {
+  position: absolute;
+  top: 0;
+  left: -3px;
+  font-size: 30px;
+  line-height: 22px;
+  transition: .3s;
+}
+/* line 270, ../sass/styles.scss */
+.education ul .header-li, .experience ul .header-li {
+  margin-left: 60px;
+}
+/* line 273, ../sass/styles.scss */
+.education ul .header-li h3, .experience ul .header-li h3 {
+  line-height: 17px;
+  margin-bottom: 0;
+  transition: .3s;
+}
+/* line 279, ../sass/styles.scss */
+.education ul .header-li p, .experience ul .header-li p {
+  width: 215px;
+  margin: 15px 0 32px 0;
+}
+/* line 285, ../sass/styles.scss */
+.education ul p, .experience ul p {
+  line-height: 30px;
+  margin-bottom: 0;
+}
+
+/*--------EXPERIENCE section---------*/
+/* line 293, ../sass/styles.scss */
+.experience {
+  background-color: #fff;
+}
+
+/*---------PORTFOLIO section---------*/
+/* line 299, ../sass/styles.scss */
+.portfolio {
+  padding-bottom: 0;
+}
+/* line 304, ../sass/styles.scss */
+.portfolio ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 311, ../sass/styles.scss */
+.portfolio ul li {
+  width: 445px;
+  margin: 0 30px 100px 0;
+}
+/* line 317, ../sass/styles.scss */
+.portfolio ul img {
+  width: 445px;
+  height: 300px;
+  margin-bottom: 50px;
 }
 
 /*
