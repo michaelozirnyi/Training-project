@@ -6,6 +6,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Exo+2:100,400,600|Roboto:300,400,500,900" rel="stylesheet">
     <link rel="stylesheet" href="fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
+    <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/styles.css">
 </head>
 <body>
@@ -15,11 +17,11 @@
         <p>Hello, I’m a <span class="text-blue">UI/UX</span> Designer  from <span class="text-blue">DeviserWeb</span>,
             Bangladesh. I hold a master degree of Web Design from theWorld University. It has a survived not only
             five centuries, hello a also the leap into electronic typesetting, remaining essentially unchanged.</p>
-        <a href="#portfolio" class="upper">Portfolio</a>
-        <a href="#aboutMe" class="upper text-blue me">About Me</a>
+        <a href="#portfolio" class="upper link">Portfolio</a>
+        <a href="#aboutMe" class="upper text-blue me link">About Me</a>
     </header>
 
-        <!--  == NAVIGATION ==  -->
+        <!-- == NAVIGATION == -->
     <section class="navigation">
         <h3 class="upper">AL-Rayhan</h3>
         <p class="text-blue">UI & UX Designer</p>
@@ -206,6 +208,86 @@
     <section class="blog">
         <h2 class="upper">Recent Post</h2>
 
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active">
+                    <img class="" src="images/post-image.png" alt="First slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="upper">UX Designer Personal Card</h3>
+                        <p class="data-post">Jan  20th  2016</p>
+                        <p>Lorem Ipsum is simply dummy text of the the of theprinting and typ setting industry. lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                        <a href="#" class="text-blue link">Read More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/post-image.png" alt="Second slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="upper">UX Designer Personal Card</h3>
+                        <p class="data-post">Feb  10th  2016</p>
+                        <p>Lorem Ipsum is simply dummy text of the the of theprinting and typ setting industry. lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                        <a href="#" class="text-blue link">Read More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/post-image.png" alt="Third slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="upper">UX Designer Personal Card</h3>
+                        <p class="data-post">Jun  20th  2016</p>
+                        <p>Lorem Ipsum is simply dummy text of the the of theprinting and typ setting industry. lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                        <a href="#" class="text-blue link">Read More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/post-image.png" alt="Fourth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="upper">UX Designer Personal Card</h3>
+                        <p class="data-post">Nov  20th  2016</p>
+                        <p>Lorem Ipsum is simply dummy text of the the of theprinting and typ setting industry. lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                        <a href="#" class="text-blue link">Read More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/post-image.png" alt="Fifth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="upper">UX Designer Personal Card</h3>
+                        <p class="data-post">Dec  19th  2016</p>
+                        <p>Lorem Ipsum is simply dummy text of the the of theprinting and typ setting industry. lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                        <a href="#" class="text-blue link">Read More</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block img-fluid" src="images/post-image.png" alt="Sixth slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h3 class="upper">UX Designer Personal Card</h3>
+                        <p class="data-post">Dec  26th  2016</p>
+                        <p>Lorem Ipsum is simply dummy text of the the of theprinting and typ setting industry. lorem
+                            Ipsum has been the industry's standard dummy text ever since the 1500s, </p>
+                        <a href="#" class="text-blue link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <i class="fa fa-angle-left" aria-hidden="true"></i>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <i class="fa fa-angle-right" aria-hidden="true"></i>
+            </a>
+        </div>
+
     </section>
 
         <!-- start Pricing Plan section -->
@@ -291,6 +373,9 @@
 
 
 
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/tether/dist/js/tether.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 
 
 </body>
