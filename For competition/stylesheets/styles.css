@@ -602,10 +602,71 @@ p {
 /* line 556, ../sass/styles.scss */
 .feedback {
   background-image: url("../images/background-feedback.png");
+  background-repeat: no-repeat;
+  padding-bottom: 0;
 }
-/* line 559, ../sass/styles.scss */
+/* line 561, ../sass/styles.scss */
 .feedback h2 {
   padding-top: 99px;
+}
+/* line 565, ../sass/styles.scss */
+.feedback .carousel-item {
+  width: 910px;
+  height: 440px;
+}
+/* line 569, ../sass/styles.scss */
+.feedback .carousel-item .carousel-caption {
+  color: #4c4c4c;
+  width: 910px;
+  left: 5px;
+  bottom: auto;
+  top: 139px;
+}
+/* line 576, ../sass/styles.scss */
+.feedback .carousel-item .carousel-caption h3 {
+  margin-bottom: 18px;
+}
+/* line 580, ../sass/styles.scss */
+.feedback .carousel-item .carousel-caption p {
+  margin-bottom: 36px;
+  line-height: 30px;
+}
+/* line 587, ../sass/styles.scss */
+.feedback .carousel-indicators {
+  bottom: auto;
+  top: 0;
+  left: -118px;
+}
+/* line 592, ../sass/styles.scss */
+.feedback .carousel-indicators li {
+  width: 80px;
+  height: 110px;
+  position: relative;
+  padding: 0 40px;
+  background-color: transparent;
+  transition: .2s;
+  margin: 0 15px;
+}
+/* line 601, ../sass/styles.scss */
+.feedback .carousel-indicators li img {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: .3s;
+}
+/* line 610, ../sass/styles.scss */
+.feedback .carousel-indicators li.active {
+  width: 110px;
+  height: 110px;
+  padding: 0 55px;
+}
+/* line 615, ../sass/styles.scss */
+.feedback .carousel-indicators li.active img {
+  width: 110px;
+  height: 110px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 /*---------SAY HELLO (contact) section---------*/

@@ -554,14 +554,80 @@ p {
 
 /*---------CLIENT'S FEEDBACK section---------*/
 .feedback {
-  background-image: url("../images/background-feedback.png");
+  background-image: url("../images/background-feedback.png") ;
+  background-repeat: no-repeat;
+  padding-bottom: 0;
 
   h2 {
     padding-top: 99px;
+  }
+
+  .carousel-item {
+    width: 910px;
+    height: 440px;
+
+    .carousel-caption {
+      color: $text-color;
+      width: 910px;
+      left: 5px;
+      bottom: auto;
+      top: 139px;
+
+      h3 {
+        margin-bottom: 18px;
+      }
+
+      p {
+        margin-bottom: 36px;
+        line-height: 30px;
+      }
+    }
+  }
+
+  .carousel-indicators {
+    bottom: auto;
+    top: 0;
+    left: -118px;
+
+    li {
+      width: 80px;
+      height: 110px;
+      position: relative;
+      padding: 0 40px;
+      background-color: transparent;
+      transition: .2s;
+      margin: 0 15px;
+
+      img {
+        width: 80px;
+        height: 80px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transition: .3s;
+      }
+
+      &.active {
+        width: 110px;
+        height: 110px;
+        padding: 0 55px;
+
+        img {
+          width: 110px;
+          height: 110px;
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+        }
+      }
+    }
   }
 }
 
 /*---------SAY HELLO (contact) section---------*/
 .contact {
+
+
   
+
+
+
 }
