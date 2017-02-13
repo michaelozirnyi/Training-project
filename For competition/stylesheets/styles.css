@@ -27,14 +27,15 @@ section {
   display: flex;
 }
 
+/* line 27, ../sass/_helper-classes.scss */
+.just-c-sp-b {
+  justify-content: space-between;
+}
+
 /*
 
 .just-c-center {
   justify-content: center;
-}
-
-.just-c-sp-b {
-  justify-content: space-between;
 }
 
 .just-c-sp-ar {
@@ -601,20 +602,19 @@ p {
 /*---------CLIENT'S FEEDBACK section---------*/
 /* line 556, ../sass/styles.scss */
 .feedback {
-  background-image: url("../images/background-feedback.png");
-  background-repeat: no-repeat;
+  background: url("../images/background-feedback.png") no-repeat;
   padding-bottom: 0;
 }
-/* line 561, ../sass/styles.scss */
+/* line 560, ../sass/styles.scss */
 .feedback h2 {
   padding-top: 99px;
 }
-/* line 565, ../sass/styles.scss */
+/* line 564, ../sass/styles.scss */
 .feedback .carousel-item {
   width: 910px;
   height: 440px;
 }
-/* line 569, ../sass/styles.scss */
+/* line 568, ../sass/styles.scss */
 .feedback .carousel-item .carousel-caption {
   color: #4c4c4c;
   width: 910px;
@@ -622,22 +622,22 @@ p {
   bottom: auto;
   top: 139px;
 }
-/* line 576, ../sass/styles.scss */
+/* line 575, ../sass/styles.scss */
 .feedback .carousel-item .carousel-caption h3 {
   margin-bottom: 18px;
 }
-/* line 580, ../sass/styles.scss */
+/* line 579, ../sass/styles.scss */
 .feedback .carousel-item .carousel-caption p {
   margin-bottom: 36px;
   line-height: 30px;
 }
-/* line 587, ../sass/styles.scss */
+/* line 586, ../sass/styles.scss */
 .feedback .carousel-indicators {
   bottom: auto;
   top: 0;
   left: -118px;
 }
-/* line 592, ../sass/styles.scss */
+/* line 591, ../sass/styles.scss */
 .feedback .carousel-indicators li {
   width: 80px;
   height: 110px;
@@ -647,7 +647,7 @@ p {
   transition: .2s;
   margin: 0 15px;
 }
-/* line 601, ../sass/styles.scss */
+/* line 600, ../sass/styles.scss */
 .feedback .carousel-indicators li img {
   width: 80px;
   height: 80px;
@@ -656,13 +656,13 @@ p {
   left: 0;
   transition: .3s;
 }
-/* line 610, ../sass/styles.scss */
+/* line 609, ../sass/styles.scss */
 .feedback .carousel-indicators li.active {
   width: 110px;
   height: 110px;
   padding: 0 55px;
 }
-/* line 615, ../sass/styles.scss */
+/* line 614, ../sass/styles.scss */
 .feedback .carousel-indicators li.active img {
   width: 110px;
   height: 110px;
@@ -670,3 +670,117 @@ p {
 }
 
 /*---------SAY HELLO (contact) section---------*/
+/* line 625, ../sass/styles.scss */
+.contact {
+  padding-right: 118px;
+}
+/* line 628, ../sass/styles.scss */
+.contact .contacts {
+  width: 260px;
+}
+/* line 632, ../sass/styles.scss */
+.contact h2 {
+  margin-bottom: 96px;
+}
+/* line 636, ../sass/styles.scss */
+.contact .location {
+  margin-bottom: 90px;
+}
+/* line 639, ../sass/styles.scss */
+.contact .location:hover i {
+  color: #3971ff;
+}
+/* line 644, ../sass/styles.scss */
+.contact h3 {
+  margin-bottom: 14px;
+}
+/* line 647, ../sass/styles.scss */
+.contact h3 i {
+  font-size: 48px;
+  margin-right: 27px;
+}
+/* line 653, ../sass/styles.scss */
+.contact p {
+  line-height: 30px;
+}
+/* line 657, ../sass/styles.scss */
+.contact .social {
+  font-size: 30px;
+  margin-left: -2px;
+}
+/* line 661, ../sass/styles.scss */
+.contact .social ul {
+  list-style: none;
+  line-height: 32px;
+  margin: 0;
+  padding: 0;
+}
+/* line 667, ../sass/styles.scss */
+.contact .social ul li {
+  display: inline;
+  margin-right: 33px;
+}
+/* line 672, ../sass/styles.scss */
+.contact .social ul a {
+  color: #4c4c4c;
+  transition: .2s;
+}
+/* line 676, ../sass/styles.scss */
+.contact .social ul a:hover {
+  color: #3971ff;
+}
+
+/* line 684, ../sass/styles.scss */
+form {
+  width: 540px;
+  margin-top: -1px;
+}
+/* line 688, ../sass/styles.scss */
+form label {
+  width: 100%;
+  margin-bottom: 36px;
+}
+/* line 693, ../sass/styles.scss */
+form input, form select, form textarea {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #4c4c4c;
+  background-color: transparent;
+  width: 100%;
+  line-height: 20px;
+  padding-bottom: 20px;
+}
+/* line 703, ../sass/styles.scss */
+form select {
+  padding: 11px 0 21px;
+}
+/* line 707, ../sass/styles.scss */
+form textarea {
+  padding-top: 11px;
+  padding-left: 0;
+  padding-bottom: 17px;
+}
+/* line 713, ../sass/styles.scss */
+form button {
+  border: none;
+  background-color: transparent;
+  color: #3971ff;
+  font: 500 16px/30px "Roboto", sans-serif;
+  position: relative;
+  padding: 0 0 6px 0;
+}
+/* line 721, ../sass/styles.scss */
+form button:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50px;
+  height: 2px;
+  background-color: #3971ff;
+  transition: .3s;
+}
+/* line 732, ../sass/styles.scss */
+form button:hover::after {
+  width: 150px;
+}

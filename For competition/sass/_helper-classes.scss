@@ -22,17 +22,20 @@ section {
 
 .flexes {
   display: flex;
-
 }
+
+.just-c-sp-b {
+  justify-content: space-between;
+}
+
+
+
+
 
 /*
 
 .just-c-center {
   justify-content: center;
-}
-
-.just-c-sp-b {
-  justify-content: space-between;
 }
 
 .just-c-sp-ar {

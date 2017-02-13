@@ -335,7 +335,6 @@
         </div>
     </section>
 
-
         <!-- start Client’s Feedback section -->
     <section class="feedback">
         <h2 class="upper">Client’s Feedback</h2>
@@ -379,45 +378,62 @@
                 </div>
             </div>
         </div>
-
-
     </section>
-
 
         <!-- start Say Hello section     ( footer? )   -->
     <section class="contact">
         <h2 class="upper">Say Hello</h2>
-        <div class="flexes">
+        <div class="flexes just-c-sp-b">
             <div class="contacts">
-                <div class="">
-                    <p><i class="pe-7s-home pe-x3"></i> pe-7s-home</p>
-
+                <div class="location">
+                    <h3 class="upper"><i class="pe-7s-home"></i>Location</h3>
+                    <p>350 Fifth Avenue , 110th floor. 3100<br>
+                        New York.</p>
                 </div>
-                <div class=""></div>
+                <div class="location">
+                    <h3 class="upper"><i class="pe-7s-mail-open"></i>Contact</h3>
+                    <p>arpon007das@gmail.com<br>
+                        onlinearpon@gmail.com</p>
+                </div>
                 <div class="social">
-                    <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                    <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            </li>
+                        <li>
+                            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <form action="">
+            <form action="#" method="post" name="form">
 
-
-
-
+                <label><input type="text" name="name" class="inp" placeholder="Your Name"></label>
+                <label><input type="email" name="email" class="inp" placeholder="Your Email"></label>
+                <label>
+                    <select class="inp" name="select" title="What Are You Interested">
+                        <option value="1">Web development</option>
+                        <option value="2">Wordpress</option>
+                        <option value="3">Design</option>
+                    </select>
+                </label>
+                <label>
+                    <textarea class="inp" name="message" cols="30" rows="5" placeholder="Type Your Message"></textarea>
+                </label>
+                <button type="submit">Lets Talk To Me</button>
             </form>
         </div>
-
-
     </section>
-
-
 
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/tether/dist/js/tether.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-
 
 </body>
 </html>
