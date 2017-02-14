@@ -127,7 +127,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 62px 0 0 30px;
+  padding: 62px 0 0 31px;
   font-family: $exo2;
 
   h3 {
@@ -163,7 +163,7 @@ p {
         &:before {
           content: "";
           position: absolute;
-          top: 50%;
+          top: 60%;
           left: 3px;
           width: 12px;
           height: 2px;
@@ -172,7 +172,7 @@ p {
         }
       }
 
-      &:hover {
+      &:hover, &:focus, &:active {
         a {
           color: $text-color;
           padding-left: 35px;
@@ -690,18 +690,50 @@ form {
     margin-bottom: 36px;
   }
 
-  input, select, textarea {
+  input,
+  select,
+  textarea {
     outline:none;
     border: none;
-    border-bottom: 1px solid $text-color;
+    border-bottom: 1px solid $gray;
     background-color: transparent;
     width: 100%;
     line-height: 20px;
     padding-bottom: 20px;
+    color: $gray;
+
+    &:focus {
+      border-color: $blue;
+      color: $text-color;
+    }
+
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
   }
 
+  .for-select {
+    position: relative;
+    
+    i {
+      position: absolute;
+      top: 9px;
+      right: 5px;
+      background-color: $bgc;
+      padding-right: 25px;
+      color: $blue;
+      font-size: 21px;
+    }
+  }
+  
   select {
     padding: 11px 0 21px;
+    color: $gray;
   }
 
   textarea {

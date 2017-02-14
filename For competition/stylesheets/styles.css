@@ -179,7 +179,7 @@ p {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 62px 0 0 30px;
+  padding: 62px 0 0 31px;
   font-family: "Exo 2", sans-serif;
 }
 /* line 133, ../sass/styles.scss */
@@ -220,7 +220,7 @@ p {
 .navigation .nav-bar li a:before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 3px;
   width: 12px;
   height: 2px;
@@ -228,12 +228,12 @@ p {
   transition: .3s;
 }
 /* line 176, ../sass/styles.scss */
-.navigation .nav-bar li:hover a {
+.navigation .nav-bar li:hover a, .navigation .nav-bar li:focus a, .navigation .nav-bar li:active a {
   color: #4c4c4c;
   padding-left: 35px;
 }
 /* line 180, ../sass/styles.scss */
-.navigation .nav-bar li:hover a:before {
+.navigation .nav-bar li:hover a:before, .navigation .nav-bar li:focus a:before, .navigation .nav-bar li:active a:before {
   left: 5px;
   width: 24px;
   background-color: #3971ff;
@@ -741,26 +741,107 @@ form label {
   margin-bottom: 36px;
 }
 /* line 693, ../sass/styles.scss */
-form input, form select, form textarea {
+form input,
+form select,
+form textarea {
   outline: none;
   border: none;
-  border-bottom: 1px solid #4c4c4c;
+  border-bottom: 1px solid #a7a7a7;
   background-color: transparent;
   width: 100%;
   line-height: 20px;
   padding-bottom: 20px;
+  color: #a7a7a7;
 }
-/* line 703, ../sass/styles.scss */
+/* line 705, ../sass/styles.scss */
+form input:focus,
+form select:focus,
+form textarea:focus {
+  border-color: #3971ff;
+  color: #4c4c4c;
+}
+/* line 710, ../sass/styles.scss */
+form input::-webkit-input-placeholder,
+form select::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/* line 711, ../sass/styles.scss */
+form input::-moz-placeholder,
+form select::-moz-placeholder,
+form textarea::-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/* line 712, ../sass/styles.scss */
+form input:-moz-placeholder,
+form select:-moz-placeholder,
+form textarea:-moz-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/* line 713, ../sass/styles.scss */
+form input:-ms-input-placeholder,
+form select:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+/* line 714, ../sass/styles.scss */
+form input:focus::-webkit-input-placeholder,
+form select:focus::-webkit-input-placeholder,
+form textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* line 715, ../sass/styles.scss */
+form input:focus::-moz-placeholder,
+form select:focus::-moz-placeholder,
+form textarea:focus::-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* line 716, ../sass/styles.scss */
+form input:focus:-moz-placeholder,
+form select:focus:-moz-placeholder,
+form textarea:focus:-moz-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* line 717, ../sass/styles.scss */
+form input:focus:-ms-input-placeholder,
+form select:focus:-ms-input-placeholder,
+form textarea:focus:-ms-input-placeholder {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+/* line 720, ../sass/styles.scss */
+form .for-select {
+  position: relative;
+}
+/* line 723, ../sass/styles.scss */
+form .for-select i {
+  position: absolute;
+  top: 9px;
+  right: 5px;
+  background-color: #f3f3f3;
+  padding-right: 25px;
+  color: #3971ff;
+  font-size: 21px;
+}
+/* line 734, ../sass/styles.scss */
 form select {
   padding: 11px 0 21px;
+  color: #a7a7a7;
 }
-/* line 707, ../sass/styles.scss */
+/* line 739, ../sass/styles.scss */
 form textarea {
   padding-top: 11px;
   padding-left: 0;
   padding-bottom: 17px;
 }
-/* line 713, ../sass/styles.scss */
+/* line 745, ../sass/styles.scss */
 form button {
   border: none;
   background-color: transparent;
@@ -769,7 +850,7 @@ form button {
   position: relative;
   padding: 0 0 6px 0;
 }
-/* line 721, ../sass/styles.scss */
+/* line 753, ../sass/styles.scss */
 form button:after {
   content: "";
   position: absolute;
@@ -780,7 +861,7 @@ form button:after {
   background-color: #3971ff;
   transition: .3s;
 }
-/* line 732, ../sass/styles.scss */
+/* line 764, ../sass/styles.scss */
 form button:hover::after {
   width: 150px;
 }

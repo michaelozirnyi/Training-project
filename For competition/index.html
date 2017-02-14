@@ -40,21 +40,21 @@
                     <a href="#portfolio" class="upper">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#" class="upper">Blog</a>
+                    <a href="#blog" class="upper">Blog</a>
                 </li>
                 <li>
-                    <a href="#" class="upper">Pricing </a>
+                    <a href="#pricing" class="upper">Pricing </a>
                 </li>
                 <li>
-                    <a href="#" class="upper">Contact</a>
+                    <a href="#contact" class="upper">Contact</a>
                 </li>
             </ul>
         </nav>
     </section>
 
         <!-- start PROFESSIONAL SKILLS section-->
-    <section class="skills">
-        <h2 class="upper" id="skills">Professional skills</h2>
+    <section class="skills" id="skills">
+        <h2 class="upper">Professional skills</h2>
         <ul>
             <li>
                 <p class="upper">Adobe CC Suite</p>
@@ -84,8 +84,8 @@
     </section>
 
         <!-- start Education section-->
-    <section class="education">
-        <h2 class="upper" id="education">Education</h2>
+    <section class="education" id="education">
+        <h2 class="upper">Education</h2>
         <ul>
             <li>
                 <span class="number-li">01</span>
@@ -131,8 +131,8 @@
     </section>
 
         <!-- start Experience section-->
-    <section class="experience">
-        <h2 class="upper" id="experience">Experience</h2>
+    <section class="experience" id="experience">
+        <h2 class="upper">Experience</h2>
         <ul>
             <li>
                 <span class="number-li">01</span>
@@ -178,8 +178,8 @@
     </section>
 
         <!-- start Portfolio section-->
-    <section class="portfolio">
-        <h2 class="upper" id="portfolio">Recent Project</h2>
+    <section class="portfolio" id="portfolio">
+        <h2 class="upper">Recent Project</h2>
         <ul>
             <li>
                 <img src="images/portfolio-img.png" alt="Portfolio">
@@ -205,7 +205,7 @@
     </section>
 
         <!-- start Recent Post section -->
-    <section class="blog">
+    <section class="blog" id="blog">
         <h2 class="upper">Recent Post</h2>
 
 
@@ -291,7 +291,7 @@
     </section>
 
         <!-- start Pricing Plan section -->
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <h2 class="upper">Pricing Plan</h2>
         <div class="examples">
             <div class="price-example">
@@ -336,7 +336,7 @@
     </section>
 
         <!-- start Client’s Feedback section -->
-    <section class="feedback">
+    <section class="feedback" id="feedback">
         <h2 class="upper">Client’s Feedback</h2>
 
         <div id="carouselFeedbackExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -381,7 +381,7 @@
     </section>
 
         <!-- start Say Hello section     ( footer? )   -->
-    <section class="contact">
+    <section class="contact" id="contact">
         <h2 class="upper">Say Hello</h2>
         <div class="flexes just-c-sp-b">
             <div class="contacts">
@@ -405,7 +405,7 @@
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                            </li>
+                        </li>
                         <li>
                             <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
                         </li>
@@ -413,15 +413,20 @@
                 </div>
             </div>
             <form action="#" method="post" name="form">
-
-                <label><input type="text" name="name" class="inp" placeholder="Your Name"></label>
-                <label><input type="email" name="email" class="inp" placeholder="Your Email"></label>
                 <label>
+                    <input type="text" name="name" class="inp" placeholder="Your Name">
+                </label>
+                <label>
+                    <input type="email" name="email" class="inp" placeholder="Your Email">
+                </label>
+                <label class="for-select">
                     <select class="inp" name="select" title="What Are You Interested">
-                        <option value="1">Web development</option>
+                        <option value="1">What Are You Interested</option>
                         <option value="2">Wordpress</option>
                         <option value="3">Design</option>
+                        <option value="4">Web development</option>
                     </select>
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </label>
                 <label>
                     <textarea class="inp" name="message" cols="30" rows="5" placeholder="Type Your Message"></textarea>
@@ -434,6 +439,7 @@
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/tether/dist/js/tether.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="js/myscript.js"></script>
 
 </body>
 </html>
