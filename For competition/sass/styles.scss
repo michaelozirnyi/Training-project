@@ -20,7 +20,7 @@ h1 {
 }
 
 h2 {
-  padding-top: 100px;
+  padding-top: 98px;
   margin: 0 0 100px 0;
   font: 600 30px/22px $exo2;
   color: $black;
@@ -105,7 +105,6 @@ p {
 .header {
   background: url(../images/image-background.png);
   padding: 90px 0 120px 475px;
-
 
   .less {
     font-size: 30px;
@@ -235,6 +234,7 @@ p {
   h2 {
     padding-top: 97px;
   }
+
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -255,20 +255,20 @@ p {
     &:before {
       content: '';
       position: absolute;
-      background-color: $blue;
-      height: 5px;
       width: 400px;
+      height: 5px;
       bottom: -5px;
       left: 0;
+      background-color: $blue;
     }
 
     &:after {
       content: '';
       position: absolute;
+      width: 0;
+      height: 0;
       bottom: -5px;
       left: 395px;
-      height: 0;
-      width: 0;
       border-top: 5px solid $blue;
       border-right: 5px solid transparent;
       border-left: 5px solid transparent;
@@ -276,18 +276,16 @@ p {
   }
 
   p {
-    line-height: 12px;
     margin: 0;
+    font-size: 17px;
+    line-height: 12px;
+    letter-spacing: -0.5px;
   }
 }
 
 /*---------EDUCATION section---------*/
 .education {
   padding-bottom: 0;
-
-  h2 {
-    padding-top: 98px;
-  }
 
   ul {
     display: flex;
@@ -349,16 +347,13 @@ p {
 /*--------EXPERIENCE section---------*/
 .experience {
   background-color: $white;
-  @extend .education;
+
+  @extend .education;    //extend style from Experience section
 }
 
 /*---------PORTFOLIO section---------*/
 .portfolio {
   padding-bottom: 0;
-
-  h2 {
-    padding-top: 98px;
-  }
 
   ul {
     display: flex;
@@ -402,12 +397,8 @@ p {
           top: 122px;
           left: 193px;
           z-index: 10;
-          color: #3971ff;
-          font-family: $exo2;
-          font-size: 142px;
-          font-weight: 100;
-          line-height: 59px;
-          text-transform: uppercase;
+          color: $blue;
+          font: 100 142px/59px $exo2;
         }
 
         img {
@@ -475,13 +466,12 @@ p {
   }
 
   .carousel-indicators {
+    width: 670px;
+    height: 2px;
     top: 41px;
     left: -31px;
-    height: 2px;
-    width: 670px;
     bottom: auto;
     background-color: $text-color;
-
 
     li {
       padding: 0 50px;
@@ -499,8 +489,8 @@ p {
           content: "";
           width: 0;
           height: 0;
-          left: 44px;
           bottom: 0;
+          left: 44px;
           border-bottom: 4px solid $blue;
           border-left: 5px solid transparent;
           border-right: 5px solid transparent;
@@ -529,6 +519,7 @@ p {
     top: 20px;
     right: 143px;
     left: auto;
+
     @extend .carousel-control-prev;
   }
 }
@@ -537,18 +528,12 @@ p {
 .pricing {
 
   h2 {
-    padding-top: 98px;
     margin-bottom: 77px;
   }
 
   p {
     line-height: 30px;
     letter-spacing: .1px;
-  }
-
-  .examples {
-    display: flex;
-    flex-wrap: wrap;
   }
 
   .price-example {
@@ -583,8 +568,6 @@ p {
   }
 
   li {
-    display: flex;
-    justify-content: space-between;
     padding: 16px 30px 0;
     border-bottom: 1px solid $gray;
 
@@ -599,8 +582,8 @@ p {
     background-color: transparent;
     font-weight: 500;
     line-height: 30px;
-    margin-left: 145px;
     width: 150px;
+    margin-left: 145px;
     padding-bottom: 12px;
     position: relative;
 
@@ -634,8 +617,8 @@ p {
       color: $text-color;
       width: 910px;
       left: 5px;
-      bottom: auto;
       top: 139px;
+      bottom: auto;
 
       h3 {
         margin-bottom: 18px;
@@ -650,18 +633,18 @@ p {
   }
 
   .carousel-indicators {
-    bottom: auto;
     top: 0;
+    bottom: auto;
     left: -118px;
 
     li {
       width: 80px;
       height: 110px;
       position: relative;
+      margin: 0 15px;
       padding: 0 40px;
       background-color: transparent;
       transition: .2s;
-      margin: 0 15px;
 
       img {
         width: 80px;
@@ -696,6 +679,7 @@ p {
   }
 
   h2 {
+    padding-top: 100px;
     margin-bottom: 96px;
   }
 
@@ -790,10 +774,10 @@ form {
     
     i {
       position: absolute;
-      top: 9px;
-      right: 5px;
+      top: 0;
+      right: 0;
+      padding: 9px 30px 21px 0;
       background-color: $bgc;
-      padding-right: 25px;
       color: $blue;
       font-size: 21px;
     }
@@ -805,9 +789,7 @@ form {
   }
 
   textarea {
-    padding-top: 11px;
-    padding-left: 0;
-    padding-bottom: 17px;
+    padding: 11px 0 17px;
   }
 
   button {

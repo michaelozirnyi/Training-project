@@ -1,11 +1,5 @@
-.text {
-  &-blue {
-    color: $blue;
-  }
-
-  &-center {
-    text-align: center;
-  }
+.text-blue {
+  color: $blue;
 }
 
 .upper {
@@ -22,26 +16,9 @@ section {
 
 .flexes {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .just-c-sp-b {
   justify-content: space-between;
 }
-
-
-
-
-
-/*
-
-.just-c-center {
-  justify-content: center;
-}
-
-.just-c-sp-ar {
-  justify-content: space-around;
-}
-
-.hidden, .hidden-text {
-  display: none;
-}*/
