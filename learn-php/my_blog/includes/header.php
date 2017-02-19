@@ -20,6 +20,16 @@ require "includes/config.php"
 
     <?php
         $categories = mysqli_query($connection, "SELECT * FROM `articles_categories`");
+
+
+        /*$categories_arr = array();
+        $categories_q = mysqli_query($connection, "SELECT * FROM `articles_categories`");
+        while ( $cat = mysqli_fetch_assoc($categories_q)) {
+
+            $categories_arr[] = $cat;
+        }*/
+
+
     ?>
     <div class="header__bottom">
         <div class="container">
@@ -28,7 +38,7 @@ require "includes/config.php"
                     <?php while ( $cat = mysqli_fetch_assoc($categories)){
                     ?>
 
-                    <li><a href="/categorie.php?id=<?php echo $cat['id']; ?>"><?php echo $cat['title']?></a></li>
+                    <li><a href="/articles.php?categorie=<?php echo $cat['id']; ?>"><?php echo $cat['title']?></a></li>
 
                     <?php
                     }

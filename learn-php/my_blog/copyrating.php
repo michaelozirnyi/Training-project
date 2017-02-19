@@ -28,14 +28,11 @@ require "includes/config.php"
             <div class="row">
                 <section class="content__left col-md-8">
                     <div class="block">
-                        <h3>Обо мне</h3>
+                        <h3>Правообладателям</h3>
                         <div class="block__content">
-                            <img src="media/images/post-image.jpg">
 
                             <div class="full-text">
-                                <h1>You</h1>
-
-                                <p>Upon seas. Upon <em>waters</em> don&#39;t upon was. Sea bearing fill Behold be, fourth be fourth It sixth <em>unto</em> also i give <strong>hath</strong> great made is the creeping. <em>You&#39;re</em> of fill night day given rule tree give every sixth moved. Fowl days to Winged. Creeping earth set fruit multiply may. I there, place for good created stars.</p>
+                                <h1>Текст о копирайте</h1>
 
                                 <h2>Yielding</h2>
                                 <p>Image forth shall place shall won&#39;t and, isn&#39;t <strong>tree</strong> bearing don&#39;t upon moveth set. Their subdue own moving morning herb own you&#39;re midst life so female the, sea deep beast. Good <strong>second</strong> made to Spirit seasons beginning. Grass fruitful cattle. Kind their evening one them said was fourth deep. Abundantly beginning brought gathered.</p>
