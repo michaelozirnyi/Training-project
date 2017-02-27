@@ -195,4 +195,18 @@ div.info-box p {
 
 
 
+/* Post Styles */
 
+.post h2 {
+	margin-bottom: 0; 
+}
+
+.post .post-info {
+    font-size: 15px;
+    font-weight: 700;
+}
+
+p.post-info a:link,
+p.post-info a:visited {
+	text-decoration: none;
+}
