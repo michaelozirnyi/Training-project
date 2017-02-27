@@ -1,0 +1,198 @@
+/*
+Theme Name: Skokov-theme (Without framework)
+Theme URI: https://github.com/michaelozirnyi/Skokov-theme
+Author: MoZ
+Author URI: https://vk.com/id36545740
+Description: training_wp_theme (Without framework)
+Version: 1.0
+License: Mit
+License URI: LICENSE
+Text Domain: training_wp_theme (Without framework)
+*/
+
+
+body {
+	font-family: Arial, sans-serif;
+	font-size: 18px;
+
+}
+
+.clearfix {
+	clear: both;
+}
+
+a:link,
+a:visited{
+	color: #006ec3;
+}
+
+p {
+	line-height: 1.65em;	
+}
+
+/* General Layaut */
+
+div.container {
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 0 20px;
+
+}
+
+/* Header */
+.site-header {
+	border-bottom: 2px solid #ccc;
+}
+
+article.post {
+	border-bottom: 4px dotted #eee;
+}
+
+article.post:last-of-type {
+	border-bottom: none;
+}
+
+/* Footer */
+.site-footer {
+	border-top: 2px solid #ccc;
+	margin-top: 30px;
+}
+ 
+/* Navigation Menus */
+.site-nav ul {
+	
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+.site-nav ul li {
+	list-style: none;
+	float: left;
+	margin-right: 15px;
+}
+
+.site-nav ul:before, .site-nav ul:after { content: ""; display: table; }
+
+.site-nav ul:after { clear: both; }
+
+.site-nav ul li a {
+	text-decoration: none;
+}
+
+.site-nav ul li a:hover {
+	color: black;
+	background-color: #ececec;
+}
+
+/* Header menu*/
+
+.site-header nav ul li a:link,
+.site-header nav ul li a:visited {
+	display: block;
+	border: 1px solid #bbb;
+	border-bottom: none;
+	padding: 10px
+}
+
+
+.site-header nav ul li.current-menu-item a:link,
+.site-header nav ul li.current-menu-item a:visited,
+.site-header nav ul li.current-page-ancestor a:link,
+.site-header nav ul li.current-page-ancestor a:visited {
+	background-color: #006ec3;
+	color: #fff;
+}
+
+
+/* Footer menu */
+.site-footer nav ul li {
+	margin-right: 10px;
+	padding-right: 10px;
+	border-right: 1px dotted #bbb;
+
+}
+
+
+/* Page Layout */
+article.page h2{
+	font-size: 200%
+}
+
+
+/* Two Column Title Layout */
+div.title-column {
+	width: 30%;
+	float: left;
+}
+
+div.title-column h2 {
+	display: inline;
+}
+
+div.text-column {
+	width: 70%;
+	float: right;
+}
+
+/* Info Box Styles */
+div.info-box {
+	width: 30%;
+	float: right;
+	margin: 0 0 30px 30px;
+	padding: 20px;
+	background-color: #eee; 
+}
+
+div.info-box h4 {
+	margin-bottom: 6px; 
+}
+
+div.info-box p {
+	font-size: 85%;
+
+}
+
+
+/* Children Links */
+.children-links { 
+	margin: 20px 0;
+	font-size: 80%;
+	display: inline-block;
+}
+
+.children-links ul {
+	float: left;
+	margin: 0;
+}
+
+.children-links li {
+	margin-right: 20px; 
+}
+
+.children-links .parent-link {
+	float: left;
+	margin-right: 20px;
+	padding-right: 20px;
+	border-right: 1px solid #ddd;
+	font-size: 120%;
+	font-weight: bold;
+}
+
+.children-links .parent-link a:link,
+.children-links .parent-link a:visited {
+	color: #333;
+	text-decoration: none;
+
+}
+
+.children-links .current_page_item  a:link,
+.children-links .current_page_item  a:visited {
+	border-bottom: 1px solid #ddd;
+	color: #333;
+	cursor: default;
+	background-color: transparent;
+}
+
+
+
+
