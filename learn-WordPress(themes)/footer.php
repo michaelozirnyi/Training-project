@@ -1,7 +1,42 @@
 
-	<footer class="site-footer">
+	<footer class="site-footer clearfix">
 
-		<nav class="site-nav">
+		<div class="footer-widgets clearfix">
+
+			<?php if( is_active_sidebar( 'footer1' )) {  ?>
+				<div class="footer-widget-area">
+					
+					<?php dynamic_sidebar( 'footer1' ); ?>
+
+				</div>
+			<?php } ?>
+
+			<?php if( is_active_sidebar( 'footer2' )) {  ?>
+				<div class="footer-widget-area">
+					
+					<?php dynamic_sidebar( 'footer2' ); ?>
+
+				</div>
+			<?php } ?>
+
+			<?php if( is_active_sidebar( 'footer3' )) {  ?>
+				<div class="footer-widget-area">
+					
+					<?php dynamic_sidebar( 'footer3' ); ?>
+
+				</div>
+			<?php } ?>
+
+			<?php if( is_active_sidebar( 'footer4' )) {  ?>
+				<div class="footer-widget-area">
+
+					<?php dynamic_sidebar( 'footer4' ); ?>
+
+				</div>
+			<?php } ?>
+		</div>
+
+		<nav class="site-nav clearfix">
 
 			<?php 
 

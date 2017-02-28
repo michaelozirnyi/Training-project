@@ -17,9 +17,12 @@ body {
 
 }
 
-.clearfix {
+.clearfix,
+div.clearfix {
 	clear: both;
 }
+
+
 
 a:link,
 a:visited{
@@ -33,11 +36,61 @@ p {
 /* General Layaut */
 
 div.container {
-	max-width: 920px;
+	max-width: 1140px;
 	margin: 0 auto;
 	padding: 0 20px;
 
 }
+
+/* Aside Styles */
+article.post-aside,
+article.post-link {
+	font-size: 125%;
+	background-color: #fff5cb;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 3px 3px 3px rgda( 0, 0, 0, 0.1 );
+} 
+
+.post-aside p {
+	margin: 0;
+}
+
+.mini-meta {
+	font-size: 15px;
+	margin: 0;
+	color: #777;
+}
+
+/* Link Post Format Styles */
+article.post-link {
+	padding: 0;
+	margin: 10px 0;
+	background-color: #e0ebff;
+}
+
+article.post-link a {
+	display: block;
+	padding: 20px;
+
+}
+
+/* Post Format Gallery Styles */
+article.post-gallery {
+	background-color: #222;
+	color: #fff;
+	padding: 20px
+}
+
+article.post-gallery img{
+	border: none !important;
+}
+
+
+article.post-gallery h2{
+	text-align: center;
+}
+
 
 /* Header */
 .site-header {
@@ -51,6 +104,36 @@ article.post {
 article.post:last-of-type {
 	border-bottom: none;
 }
+
+/* Post Columns */
+.home-columns {
+	padding-top: 30px;
+}
+
+.one-half {
+	width: 45%;
+	float: left;
+	margin-right: 10%;
+}
+
+.last {
+	margin-right: 0;
+}
+
+
+/* Main Column */
+.main-column {
+	width: 66%;
+	float: left; 
+}
+
+/* Side Column */
+.secondary-column {
+	width: 30%;
+	float: right; 
+}
+
+
 
 /* Footer */
 .site-footer {
@@ -101,6 +184,16 @@ article.post:last-of-type {
 .site-header nav ul li.current-page-ancestor a:visited {
 	background-color: #006ec3;
 	color: #fff;
+}
+
+
+/* Footer Widget Area */
+.footer-widget-area {
+	width: 25%;
+	float: left;
+	padding-right: 30px
+	box-sizing: border-box;
+
 }
 
 
@@ -228,3 +321,30 @@ img {
 	top: 0;
 	left: 0;
 }
+
+/* Search */
+div.hd-search {
+	float: right;
+}
+
+div.hd-search label {
+	position: absolute;
+	left: -9999px;
+}
+
+div.hd-search #searchsubmit {
+	background-color: #006ec3;
+	color: #fff;
+	padding: 5px 15px;
+	border: none;
+	vertical-align: top;
+}
+
+div.hd-search #s {
+	vertical-align: top;
+	padding: 4px;	
+}
+
+
+
+
