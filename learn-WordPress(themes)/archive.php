@@ -1,22 +1,39 @@
-
-
 <?php 
 
 	get_header();
 
-	if( have_posts() ){
+	if( have_posts() ) {
+
+		?>
+
+		<h2><?php 
+
+			if( is_category() ) {
+				single_cat_title();
+			} elseif ( is_tag() ) {
+				single_tag_title();
+			} elseif ( is_author() ) {
+				the_post();
+				echo 'Author Archive: ' . get_the_author();
+				rewind_posts();
+			} elseif ( is_day() ) {
+				echo 'Dayli Archives: ' . get_the_date();
+			} elseif ( is_month() ) {
+				echo 'Monthly Archives: ' . get_the_date('F Y');
+			} elseif ( is_year() ) {
+				echo 'Yearly Archives: ' . get_the_date('Y');
+			} else {
+				echo 'Archives:';
+			}
+
+		 ?></h2>
+
+		<?php
 		while( have_posts() ) { 
 			the_post(); ?>
 
 
-			<article class="post <?php if ( has_post_thumbnail()) { ?>has-thumbnail<?php } ?> ">
-
-				<div class="post-thumbnail">
-
-					<a href="<?php the_permalink(); ?>"><?php  the_post_thumbnail( 'small-thumbnail' ); ?></a>
-
-				</div>
-
+			<article class="post">
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 				<p class="post-info">
@@ -38,20 +55,9 @@
 							echo trim( $output, $separator );
 						}
 					 ?>
-				</p>				
+				</p>
 
-				<?php  if ( $post->post_excerpt ) { ?>
-		
-					<p>
-					<?php echo get_the_excerpt(); ?>
-					<a href="<?php the_permalink(); ?>">Read more</a>
-					</p>
-				<?php  } else { 
-
-					the_content();
-
-					} ?>
-				
+				<?php the_excerpt(); ?>
 			</article>	
 
 		<?php
@@ -64,4 +70,3 @@
 	get_footer();
 
  ?>
-

@@ -7,13 +7,6 @@
 
 	add_action('wp_enqueue_scripts', 'learningWordPress_resources');
 
-// Navigation Menus
-
-	register_nav_menus( array(
-		'primary' => __( 'Primary Menu' ),
-		'footer' => __( 'Footer Menu' ),
-
-	));
 
 
 // Get top ancestor 
@@ -40,3 +33,31 @@ function has_children() {
 	$pages = get_pages( 'child_of=' . $post->ID );
 	return count( $pages );
 }
+
+// Customize excerpt word count ltnght
+function custom_excerpt_lenght() {
+	return 25;
+}
+
+add_filter( 'excerpt_lenght', 'custom_excerpt_lenght' );
+
+
+// Theme Setup
+function setup_featured_image() {
+
+	// Navigation Menus
+	register_nav_menus( array(
+		'primary' => __( 'Primary Menu' ),
+		'footer' => __( 'Footer Menu' ),
+
+	));
+
+	// Add featured image support
+	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'small-thumbnail', 180, 120, true );
+	add_image_size( 'bunner-image', 920, 270, array( 'left', 'top' ));
+
+
+}
+
+add_action( 'after_setup_theme', 'setup_featured_image' );

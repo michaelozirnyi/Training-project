@@ -1,5 +1,3 @@
-
-
 <?php 
 
 	get_header();
@@ -9,14 +7,7 @@
 			the_post(); ?>
 
 
-			<article class="post <?php if ( has_post_thumbnail()) { ?>has-thumbnail<?php } ?> ">
-
-				<div class="post-thumbnail">
-
-					<a href="<?php the_permalink(); ?>"><?php  the_post_thumbnail( 'small-thumbnail' ); ?></a>
-
-				</div>
-
+			<article class="post">
 				<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
 				<p class="post-info">
@@ -38,20 +29,11 @@
 							echo trim( $output, $separator );
 						}
 					 ?>
-				</p>				
+				</p>
 
-				<?php  if ( $post->post_excerpt ) { ?>
-		
-					<p>
-					<?php echo get_the_excerpt(); ?>
-					<a href="<?php the_permalink(); ?>">Read more</a>
-					</p>
-				<?php  } else { 
+				<?php  the_post_thumbnail( 'bunner-image' ); ?>
 
-					the_content();
-
-					} ?>
-				
+				<?php the_content(); ?>
 			</article>	
 
 		<?php
@@ -64,4 +46,3 @@
 	get_footer();
 
  ?>
-
