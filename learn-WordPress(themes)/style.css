@@ -49,7 +49,7 @@ article.post-link {
 	background-color: #fff5cb;
 	padding: 20px;
 	border-radius: 5px;
-	box-shadow: 3px 3px 3px rgda( 0, 0, 0, 0.1 );
+	box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.1 );
 } 
 
 .post-aside p {
@@ -191,7 +191,7 @@ article.post:last-of-type {
 .footer-widget-area {
 	width: 25%;
 	float: left;
-	padding-right: 30px
+	padding-right: 30px;
 	box-sizing: border-box;
 
 }
