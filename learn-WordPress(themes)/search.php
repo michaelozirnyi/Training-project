@@ -17,6 +17,9 @@
 
 
 		} 
+
+		/* Add the pagination */
+		echo paginate_links();
 	} else {
 			echo '<p>No content foud</p>';
 		}

@@ -14,6 +14,14 @@
 					get_template_part( 'content', get_post_format() );
 
 					} 
+
+				/* Add the pagination */
+
+				// previous_posts_link();
+				// next_posts_link();
+
+				echo paginate_links();
+
 				} else {
 						echo '<p>No content foud</p>';
 					} ?>

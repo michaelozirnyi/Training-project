@@ -33,8 +33,10 @@
 			the_post(); 
 
 		get_template_part( 'content', get_post_format());
-
 		} 
+		/* Add the pagination */
+		echo paginate_links();
+
 	} else {
 			echo '<p>No content foud</p>';
 		}
