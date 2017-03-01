@@ -1,5 +1,22 @@
 
 	<footer class="site-footer clearfix">
+		
+	<?php if ( get_theme_mod( 'lwp-footer-callout-display' ) == 'Yes' ) { ?>
+
+		<div class="footer-callout clearfix">
+			<div class="footer-callout-img">
+				<img src="<?php echo wp_get_attachment_url( get_theme_mod( 'lwp-footer-callout-img' )); ?>">
+			</div>
+			<div class="footer-callout-text">
+				<h2>
+					<a href="<?php echo get_permalink( get_theme_mod( 'lwp-footer-callout-link' )); ?>"><?php echo get_theme_mod( 'lwp-footer-callout-headline' ); ?>
+					</a>
+				</h2>
+				<p><?php echo wpautop( get_theme_mod( 'lwp-footer-callout-text' )); ?></p>
+			</div>
+		</div>	
+
+	<?php } ?>
 
 		<div class="footer-widgets clearfix">
 

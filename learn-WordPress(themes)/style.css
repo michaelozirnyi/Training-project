@@ -49,7 +49,7 @@ article.post-link {
 	background-color: #fff5cb;
 	padding: 20px;
 	border-radius: 5px;
-	box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.1 );
+	box-shadow: 3px 3px 3px rgda( 0, 0, 0, 0.1 );
 } 
 
 .post-aside p {
@@ -345,6 +345,75 @@ div.hd-search #s {
 	padding: 4px;	
 }
 
+/* Footer Callout Section */
+
+.footer-callout {
+	background-color: #ddd;
+	min-height: 100px;
+	padding: 20px;
+	margin: 20px 0 0 0;
+	display: flex;
+}
+
+.footer-callout-img {
+	float: left;
+	width: 30%;	
+    margin-right: 20px;
+}
+
+.footer-callout-text {
+	float: right;
+	width: 67%
+}
+
+.footer-callout-text h2 {
+	font-size: 1.7rem;
+	margin: 0 0 .35rem 0;
+}
+
+.footer-callout-text p {
+	font-size: .9rem;
+}
 
 
+/* About the Author section */
+.about-author {
+	background-color: #ededed;
+	padding: 20px;
+	display: flex;
+}
 
+.about-author-img {
+	width: 20%;
+	margin-right: 5%;
+	text-align: center;
+}
+
+.about-author-img p {
+	margin: 0;
+	padding: 5px 0;
+	background-color: rgba(0, 0, 0, .4);
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .85);
+	color: #fff;
+}
+
+.about-author-text {
+	width: 75%;
+}
+
+.about-author-text h3 {
+	margin-top: 0;
+}
+
+
+/* Style for Button */
+a.btn-a {
+    display: inline-block;
+	margin-top: 10px;
+	border-radius: 5px;
+	padding: 5px 10px;
+	color: #fff !important;
+	background-color: #7a43b6;
+	text-decoration: none;
+}
